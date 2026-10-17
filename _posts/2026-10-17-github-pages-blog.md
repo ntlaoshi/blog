@@ -84,4 +84,6 @@ categories: 折腾
 
 ---
 
+> **说明**：本文由 AI 生成，经 BG6HMA 校对后发布。
+
 73 de **BG6HMA**。
