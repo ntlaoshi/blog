@@ -1,45 +1,45 @@
-﻿---
+---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import "minima";
 
-/* 椤甸潰瀹瑰櫒锛氫繚鎸佸眳涓紝绐勫睆鑷€傚簲 */
+/* 页面容器：保持居中，窄屏自适应 */
 .wrapper {
   box-sizing: border-box;
   max-width: 800px;
   width: 92%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(16px, calc(3vw), 30px);
-  padding-right: clamp(16px, calc(3vw), 30px);
+  padding-left: clamp(16px, 3vw, 30px);
+  padding-right: clamp(16px, 3vw, 30px);
 }
 
-/* 绔欏悕锛氬姞绮楋紝闅忓睆骞曞钩婊戞斁澶?*/
+/* 站名：加粗，随屏幕平滑放大 */
 .site-title {
   font-weight: 700;
   font-size: clamp(24px, calc(1vw + 18px), 32px);
   line-height: 1.25;
 }
 
-/* 椤甸潰鏍囬锛堥椤电瓑锛夛細姣旂珯鍚嶇暐灏忥紝淇濇寔灞傛 */
+/* 页面标题（首页等）：比站名略小，保持层次 */
 .page-heading {
   font-size: clamp(24px, calc(1vw + 16px), 32px);
   line-height: 1.25;
 }
 
-/* 鏂囩珷椤靛ぇ鏍囬 */
+/* 文章页大标题 */
 .post-title {
   font-size: clamp(26px, calc(1.2vw + 18px), 38px);
   line-height: 1.25;
 }
 
-/* 棣栭〉鏂囩珷鍒楄〃鏍囬 */
+/* 首页文章列表标题 */
 .post-list .post-link {
   font-size: clamp(18px, calc(0.6vw + 14px), 23px);
 }
 
-/* 姝ｆ枃涓庢爣棰橀殢灞忓箷缂╂斁 */
+/* 正文与标题随屏幕缩放 */
 .post-content,
 .page-content {
   font-size: clamp(15px, calc(0.3vw + 14px), 17px);
@@ -52,7 +52,7 @@
   font-size: clamp(17px, calc(0.5vw + 13px), 20px);
 }
 
-/* 缁熻 */
+/* 统计 */
 .site-stats {
   margin-top: 20px;
   padding-top: 12px;
@@ -69,7 +69,7 @@
   font-weight: 600;
 }
 
-/* 鍐呭鑷€傚簲 */
+/* 内容自适应 */
 .post-content img,
 .page-content img {
   max-width: 100%;
@@ -88,7 +88,7 @@
   word-wrap: break-word;
 }
 
-/* 鎵嬫満绔井璋?*/
+/* 手机端微调 */
 @media screen and (max-width: 600px) {
   .site-stats {
     font-size: 12px;
@@ -97,4 +97,3 @@
     margin: 0 4px;
   }
 }
-
