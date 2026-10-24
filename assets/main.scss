@@ -15,17 +15,41 @@
   padding-right: clamp(16px, 3vw, 30px);
 }
 
-/* 站名：随宽度平滑缩放 */
+/* 站名：加粗，随屏幕平滑放大 */
 .site-title {
   font-weight: 700;
-  font-size: clamp(20px, 3.2vw, 26px);
+  font-size: clamp(24px, 1vw + 18px, 32px);
+  line-height: 1.25;
 }
 
-/* 文章标题：随宽度平滑缩放 */
-.post-title,
+/* 页面标题（首页等）：比站名略小，保持层次 */
 .page-heading {
-  font-size: clamp(26px, 4.4vw, 42px);
-  line-height: 1.2;
+  font-size: clamp(24px, 1vw + 16px, 32px);
+  line-height: 1.25;
+}
+
+/* 文章页大标题 */
+.post-title {
+  font-size: clamp(26px, 1.2vw + 18px, 38px);
+  line-height: 1.25;
+}
+
+/* 首页文章列表标题 */
+.post-list .post-link {
+  font-size: clamp(18px, 0.6vw + 14px, 23px);
+}
+
+/* 正文与标题随屏幕缩放 */
+.post-content,
+.page-content {
+  font-size: clamp(15px, 0.3vw + 14px, 17px);
+  line-height: 1.75;
+}
+.post-content h2 {
+  font-size: clamp(20px, 0.8vw + 14px, 26px);
+}
+.post-content h3 {
+  font-size: clamp(17px, 0.5vw + 13px, 20px);
 }
 
 /* 统计 */
@@ -66,17 +90,6 @@
 
 /* 手机端微调 */
 @media screen and (max-width: 600px) {
-  .post-content,
-  .page-content {
-    font-size: 16px;
-    line-height: 1.7;
-  }
-  .post-content h2 {
-    font-size: 22px;
-  }
-  .post-content h3 {
-    font-size: 18px;
-  }
   .site-stats {
     font-size: 12px;
   }
