@@ -4,10 +4,13 @@
 
 @import "minima";
 
-/* 页面容器：随屏幕宽度自适应，大屏不再固定 800px */
+/* 页面容器：保持居中，窄屏自适应 */
 .wrapper {
   box-sizing: border-box;
-  max-width: min(1100px, 92vw);
+  max-width: 800px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: clamp(16px, 3vw, 30px);
   padding-right: clamp(16px, 3vw, 30px);
 }
