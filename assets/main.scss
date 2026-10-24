@@ -4,8 +4,25 @@
 
 @import "minima";
 
+/* 页面容器：随屏幕宽度自适应，大屏不再固定 800px */
+.wrapper {
+  box-sizing: border-box;
+  max-width: min(1100px, 92vw);
+  padding-left: clamp(16px, 3vw, 30px);
+  padding-right: clamp(16px, 3vw, 30px);
+}
+
+/* 站名：随宽度平滑缩放 */
 .site-title {
   font-weight: 700;
+  font-size: clamp(20px, 3.2vw, 26px);
+}
+
+/* 文章标题：随宽度平滑缩放 */
+.post-title,
+.page-heading {
+  font-size: clamp(26px, 4.4vw, 42px);
+  line-height: 1.2;
 }
 
 /* 统计 */
@@ -44,17 +61,8 @@
   word-wrap: break-word;
 }
 
-/* 手机端适配 */
+/* 手机端微调 */
 @media screen and (max-width: 600px) {
-  .site-title {
-    font-size: 22px;
-    letter-spacing: 0;
-  }
-  .post-title,
-  .page-heading {
-    font-size: 26px;
-    line-height: 1.25;
-  }
   .post-content,
   .page-content {
     font-size: 16px;
@@ -71,9 +79,5 @@
   }
   .site-stats .sep {
     margin: 0 4px;
-  }
-  .wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
