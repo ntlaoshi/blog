@@ -7,3 +7,73 @@
 .site-title {
   font-weight: 700;
 }
+
+/* 统计 */
+.site-stats {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #e8e8e8;
+  font-size: 13px;
+  color: #828282;
+  text-align: center;
+}
+.site-stats .sep {
+  margin: 0 8px;
+}
+.site-stats strong {
+  color: #424242;
+  font-weight: 600;
+}
+
+/* 内容自适应 */
+.post-content img,
+.page-content img {
+  max-width: 100%;
+  height: auto;
+}
+.post-content pre {
+  overflow-x: auto;
+}
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.post-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* 手机端适配 */
+@media screen and (max-width: 600px) {
+  .site-title {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  .post-title,
+  .page-heading {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  .post-content,
+  .page-content {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .post-content h2 {
+    font-size: 22px;
+  }
+  .post-content h3 {
+    font-size: 18px;
+  }
+  .site-stats {
+    font-size: 12px;
+  }
+  .site-stats .sep {
+    margin: 0 4px;
+  }
+  .wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

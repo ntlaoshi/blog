@@ -1,0 +1,16 @@
+<div class="site-stats">
+  <span class="stat-item">本站已安全运行 <strong id="uptime-days">—</strong> 天</span>
+  <span class="sep">·</span>
+  <span class="stat-item" id="busuanzi_container_site_pv">访问量 <strong id="busuanzi_value_site_pv">—</strong> 次</span>
+  <span class="sep">·</span>
+  <span class="stat-item" id="busuanzi_container_site_uv">访客 <strong id="busuanzi_value_site_uv">—</strong> 人</span>
+</div>
+<script>
+(function () {
+  var start = new Date('2026-10-17T00:00:00+08:00').getTime();
+  var days = Math.floor((Date.now() - start) / 86400000);
+  var el = document.getElementById('uptime-days');
+  if (el && days >= 0) el.textContent = days;
+})();
+</script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
